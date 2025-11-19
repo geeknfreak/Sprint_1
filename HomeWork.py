@@ -36,7 +36,6 @@ class Tester:
 
     def __init__(self, name):
         self.name = name
-        self.deadline = True
 
     def work_hard(self, deadline=True):
         if deadline: 
@@ -67,7 +66,7 @@ country = 'Италия'
 world_champions[2022] = 'Аргентина' # Добавил в словарь 2022 год и чемпиона Аргентину
 for year,cntry in world_champions.items(): # Тут как будто покрасивше можно второе вэлью было написать, country занят переменной
     print(year, '-', cntry)
-if country in cntry:
+if country in world_champions:
     print('Италия становилась чемпионом мира по футболу в 21 веке!')
 else: print('Италия не становилась чемпионом мира по футболу в 21 веке!')
 
@@ -94,7 +93,7 @@ print(last_task)
 
 
 
-# ==================== ЗАДАНИЕ 5:  ====================
+# ==================== ЗАДАНИЕ 5: Классс ====================
 
 class TestCase:
     
@@ -131,4 +130,3 @@ test_case_2.set_step(2, 'Перейти в раздел Корзина')
 test_case_2.set_step(3, 'Нажать кнопку "Удалить"')
 test_case_2.set_result('Товар удален из корзины')
 test_case_2.get_test_case() 
-        
