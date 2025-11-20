@@ -13,7 +13,7 @@ country = 'Италия'
 world_champions[2022] = 'Аргентина' # Добавил в словарь 2022 год и чемпиона Аргентину
 for year,cntry in world_champions.items(): # Тут как будто покрасивше можно второе вэлью было написать, country занят переменной
     print(year, '-', cntry)
-if country in world_champions:
-    print('Италия становилась чемпионом мира по футболу в 21 веке!')
-else: print('Италия не становилась чемпионом мира по футболу в 21 веке!')
+if country in world_champions.values():
+    print(f'{country} становилась чемпионом мира по футболу в 21 веке!')
+else: print(f'{country} не становилась чемпионом мира по футболу в 21 веке!')
 
